@@ -1,19 +1,59 @@
 @import '@/styles/breakpoints';
+
 .header {
-	position: fixed;
-	top: 0;
 	width: 100%;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	padding: 15px 0;
+
 	.container {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
+
 		@include breakpoint('lg') {
 			padding: 20px;
 			justify-content: space-between;
 		}
+
 		.linkLogo {
 			.logo {
 				font-size: 30px;
+			}
+		}
+
+		.btns {
+			display: flex;
+			gap: 20px;
+			.login {
+				padding: 10px 15px;
+				font-size: calc(14px + 6 * ((100vw - 360px) / 1240));
+				font-weight: 400;
+				color: #1e94f3;
+				border: 2px solid transparent;
+				border-bottom: 2px solid #1e94f3;
+				transition: 0.3s all;
+
+				&:hover {
+					border-radius: 12px;
+					border: 2px solid #1e94f3;
+				}
+			}
+
+			.signUp {
+				padding: 10px 15px;
+				font-size: calc(14px + 6 * ((100vw - 360px) / 1240));
+				font-weight: 400;
+				color: #fff;
+				border: 2px solid transparent;
+				background: #1e94f3;
+				transition: 0.3s all;
+				border-radius: 12px;
+
+				&:hover {
+					color: #1e94f3;
+					background: #fff;
+					border: 2px solid #1e94f3;
+				}
 			}
 		}
 	}

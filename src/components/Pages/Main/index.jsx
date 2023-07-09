@@ -1,9 +1,10 @@
 import { Box } from '@chakra-ui/react'
+import styles from './styles.module.scss'
 
-const MainPage = ({ universities, countries, news }) => {
+const MainPage = () => {
 	return (
-		<Box>
-			MAIN
+		<Box className={styles.mainPage}>
+
 		</Box>
 	)
 }
