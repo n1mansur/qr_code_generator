@@ -7,7 +7,7 @@ const theme = extendTheme(
     components: {
       Input: {
         defaultProps: {
-          focusBorderColor: 'primary.500'
+          focusBorderColor: 'blue.main'
         }
       },
       Modal: {
@@ -32,7 +32,7 @@ const theme = extendTheme(
           
         },
         defaultProps: {
-          focusBorderColor: 'primary.500'
+          focusBorderColor: 'blue.main'
         }
         // baseStyle: {
         //   borderRadius: '8px',
@@ -60,8 +60,7 @@ const theme = extendTheme(
     }
   },
   withDefaultColorScheme({
-    colorScheme: "primary",
-  })
+    colorScheme: "blue" })
 )
 
 export default theme

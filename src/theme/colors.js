@@ -1,4 +1,7 @@
 const colors = {
+	blue: {
+		main: '#1e94f3',
+	},	   
 	primary: {
 		main: '#DE2329',
 		"50": "#FCE9E9",

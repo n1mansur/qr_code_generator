@@ -1,0 +1,22 @@
+.category {
+  margin-bottom: 20px;
+  .cardsList {
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+    gap: 10px;
+
+    .card {
+      padding: 5px 12px;
+      cursor: pointer;
+      color: #000;
+      border-bottom: 1px solid gray;
+      transition: 0.3s all;
+
+      &:hover {
+        border-radius: 8px;
+        background: #f7f7f7;
+      }
+    }
+  }
+}
